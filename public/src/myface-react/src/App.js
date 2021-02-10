@@ -11,15 +11,15 @@ function App() {
       <h1>My face - only for robots and their friends</h1>
     <Switch>
       <Route path="/posts">
-      <div><PostsDisplay/></div>
+      <div>Posts<PostsDisplay/></div>
       </Route>
       <Route exact={true} path="/users">
       <div><User/></div>
       </Route>
       <Route path="">
         <div>Sorry - that page does not exist, try these:</div>
-        <Link to="/posts"></Link>
-        <Link to="/users"></Link>
+       <p> <Link to="/posts">Posts</Link></p>
+        <p> <Link to="/users">Users</Link></p>
       </Route>
     </Switch>
     

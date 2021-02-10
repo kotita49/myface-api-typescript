@@ -20,15 +20,10 @@ function PostsDisplay(){
          
          
          
+         
     
 }
-// function dataIntoArray(data){
-//     let postsArray = [];
-//     for(let i in data.results){
-//         postsArray.push(i)
-//     }
-//     return postsArray.results
-// }
+
 
 export {PostsDisplay};
 
