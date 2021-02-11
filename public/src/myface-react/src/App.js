@@ -12,6 +12,8 @@ function App() {
   return (
     <Router>
       <div className="mainBanner">
+      <p className="central"> <button ><Link to="/posts">Posts</Link></button><button>
+         <Link to="/users">Users</Link></button></p>
         <h1>My face - only for robots and their friends</h1>
       </div> 
     <Switch>
