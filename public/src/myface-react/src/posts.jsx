@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import {Post} from './Post.jsx'
+import {Post} from './Post.jsx';
+import './App.scss';
+
 
 function PostsDisplay(){
     const [myPosts, setMyPosts] = useState(null);
@@ -11,7 +13,7 @@ function PostsDisplay(){
         if (!myPosts) {
         return <div>Waiting for data!</div>
     }    return myPosts.results.map((posts) =>
-                   <div> <Post imageUrl={posts.imageUrl} post={posts.message} user={posts.postedBy.name} date={posts.createdAt}
+                   <div> <Post imageUrl={posts.imageUrl} post={posts.message} user={posts.postedBy.name} date={posts.createdAt} userId={posts.postedBy.id}
                    /></div>)
          
          

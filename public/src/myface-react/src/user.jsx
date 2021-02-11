@@ -10,7 +10,7 @@ function User(){
         if (!user) {
         return <div>Waiting for user data!</div>
     }    return user.results.map((items) =>
-          <div> <UserDetails name={items.name} profileImage={items.profileImageUrl} username={items.username} email={items.email}  coverImage={items.coverImageUrl}  /></div>)
+          <div> <UserDetails post={items.posts} userId={items.id} name={items.name} profileImage={items.profileImageUrl} username={items.username} email={items.email}  coverImage={items.coverImageUrl}  /></div>)
 
 }
 export {User}

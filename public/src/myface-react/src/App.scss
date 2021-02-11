@@ -1,0 +1,120 @@
+@import 'posts';
+@import 'mainPage';
+
+@mixin heading($fontColor: rgb(19, 16, 16)){
+  margin: 0 auto;
+  background-color: rgb(196, 36, 116);
+  text-align: center;
+   width: 80%;
+}
+@mixin centre(){
+  text-align: center;
+ 
+  font-weight: 600;
+  :hover{
+    text-decoration: none;
+  }
+}
+
+.App {
+  text-align: center;
+  background-color: $backgroundColor;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px auto;
+ 
+}
+.mainBanner{
+  @include heading
+  
+}
+.mainBanner {
+  background-color: navajowhite;
+}
+.profile{
+  margin-top: -600px;
+  z-index: -7;
+  }
+.profile img{
+  width: 20%;
+  height: 20%;
+}
+h2{
+  font-size: 40px
+
+}
+.central{
+ @include centre();
+ font-size: 20px;
+ 
+ }
+ 
+ 
+  .central p{
+   font-size: 20px;
+   color: black;
+   background-color: blanchedalmond;
+   width: 30%;
+   margin: 5px auto;
+ }
+ .central>img{
+   width: 1200px;
+   height: 800px;
+ }
+ .tile{
+  
+  
+  height: 600px;
+ }
+ 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 400px){
+  .App{
+    margin: 10px 10px;
+    background-color: chocolate;
+    width: 80%
+  }
+  .central p{
+    font-size: 14px;
+    color: black;
+    background-color: blanchedalmond;
+   width: 50%;
+    margin: 5px auto;
+  }
+  
+  .profile{
+    margin-top: -100px;
+    z-index: -7;
+  }
+  .profile img{
+    width: 150px;
+    height: 150px;
+  }
+  .central>img{
+    width: 100%;
+    height: 80%;
+  }
+  h1{
+    font-size: 20px;
+  }
+}

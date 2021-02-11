@@ -1,15 +1,11 @@
 import React from "react"; 
+import {BrowserRouter as Router, Switch, Route, Link, useParams} from 'react-router-dom';
 
 function UserDetails(props){
-   return <div>
-       <div>My name is {props.name} aka {props.username}</div>
-              <p>My email {props.email}</p>
-       <img src={props.profileImage}/>
-     
-        <img src={props.coverImage}/>
-    
+   return <div className="central">
+       <p>{props.name} aka  <Link to={`/${props.userId}`}> {props.username} </Link></p>
+        
        
-        <div>{props.email}</div>
     </div>
 
 }

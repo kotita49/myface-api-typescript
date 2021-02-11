@@ -1,0 +1,42 @@
+$backgroundColor: #60726c;
+$color: white;
+h2{
+   padding: 20px 20px;
+  text-align: center;
+ 
+}
+  
+
+.white{
+  color: $color;
+  text-align: center;
+}
+.post {
+  width: 400px;
+  margin: 16px 46px;
+}
+.post img{
+  width: 400px;
+  height: 400px;
+}
+@media only screen and (max-width: 400px){
+  body{
+      font-size: 14px;
+  }
+h1{
+  font-size: 24px;
+
+}
+.post {
+  width: 200px;
+  margin: 10px 10px;
+}
+.post img{
+  width: 200px;
+  height: 200px;
+  padding: 10px 10px;
+}
+
+
+
+}
