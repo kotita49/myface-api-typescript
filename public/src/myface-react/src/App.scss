@@ -64,7 +64,8 @@ h2{
    font-size: 20px;
    color: black;
    background-color: blanchedalmond;
-   width: 30%;
+   width: 20%;
+   height:max-content;
    margin: 5px auto;
  }
  .central>img{
@@ -76,7 +77,12 @@ h2{
   
   height: 600px;
  }
- 
+ .disappear{
+   display: none;
+ }
+ label{
+   color: white;
+ }
 .App-logo {
   height: 40vmin;
   pointer-events: none;

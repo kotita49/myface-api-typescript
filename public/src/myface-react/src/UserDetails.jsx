@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Switch, Route, Link, useParams} from 'react-rou
 
 function UserDetails(props){
    return <div className="central">
-       <p>{props.name} aka  <Link to={`/${props.userId}`}> {props.username} </Link></p>
+       <p>{props.name} aka  <Link to={`users/${props.userId}`}> {props.username} </Link></p>
         
        
     </div>
